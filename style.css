@@ -1,0 +1,375 @@
+
+        body {
+            /* background-color: #f8f9fa; */
+            background: url(Components/background.jpg);
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Slab', serif;
+            height:100vh;
+            background-size: 100% 100%;
+        }
+   
+        .bg_img{
+            background: url(Components/security_bg.png); 
+            background-size:100% 100%;
+            background-size: cover;
+            height:100vh;
+            background-position: center;
+        }
+        .contain{
+            /* margin-top: 50px; */
+            width: 500px;
+            height:550px;
+           margin:auto;
+            background-color: rgba(255,255,255,0.50);
+            /* opacity:0.66; */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            border-color:#fff;
+            
+        }
+
+        .contain2{
+            /* margin-top: 50px; */
+            width: 500px;
+           
+           margin:auto;
+            background-color: rgba(255,255,255,0.50);
+            /* opacity:0.66; */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            border-color:#fff;
+            
+        }
+        .form-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+            color: #2B4F8A;
+            font-weight:bold;
+        }
+
+        .logo{
+            width:100%;
+            display:flex;
+            justify-content:center;
+        }
+
+        .exe_logo{
+          width:100%;
+          display:flex;
+          justify-content:center;
+          margin-top:200px;
+          flex-direction: column;
+      }
+
+      .exe_logo p{
+        color:#2B4F8A;
+        opacity:0.5;
+        text-align: center;
+      }
+      
+        .main{
+            height:100%; 
+            width:100%; 
+            display:flex;
+        }
+
+        .input-icon {
+            display: flex;
+            align-items: center;
+            position: relative;
+            /* width: fit-content; */
+            /* display: inline-block; */
+        }
+        
+        label{
+            color: #2B4F8A;
+            font-weight: bold;
+        }
+        .input-icon img {
+            height:25px;
+            width:25px;
+            
+            position: absolute;
+            top: 45%;
+            left: 12px;
+            transform: translateY(-50%);
+            pointer-events: none; /* Ensures the icon doesn't interfere with input */
+            color: #2B4F8A; /* Icon color */
+        }
+
+        .input-icon input {
+                 padding:25px 30px 25px 0px;
+                 -webkit-padding-left:45px;
+                 -moz-padding-left:45px;
+                 padding-left:45px;
+                 border-radius:10px;
+                 background-color: rgba(255,255,255,0.5);
+       
+        }
+
+        .input-icon textarea {
+            padding:25px 30px 25px 0px;
+            -webkit-padding-left:45px;
+            -moz-padding-left:45px;
+            padding-left:45px;
+            border-radius:10px;
+            background-color: rgba(255,255,255,0.5);
+  
+   }
+       
+        .input-clock input{
+            padding:25px 30px 25px 0px;
+            -webkit-padding-left:45px;
+            -moz-padding-left:45px;
+            padding-left:45px;
+            border-radius:10px;
+            background-color: rgba(255,255,255,0.5);
+
+        }
+
+        .input-clock{
+            position:relative;
+        }
+
+
+        .input-clock img{
+            height:30px;
+            width:30px;
+            
+            position: absolute;
+            top: 45%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none; /* Ensures the icon doesn't interfere with input */
+            color: #2B4F8A; /* Icon color */
+        }
+
+        .clock::after{
+            content:url('Components/clock.svg');
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            /* transform: translateY(-50%); */
+            /* pointer-events: none; */
+        }
+        
+        .form-control {
+            /* Add padding to avoid text overlap with icon */
+            box-sizing: border-box; /* Ensure padding is included in width */
+        }
+        ::placeholder{
+            
+            font-size:18px;
+        }
+       
+
+        .btn-primary {
+            background-image: linear-gradient(to bottom, #3E92D7, #2B4F8A); /* Gradient background */
+            border: none; /* Remove border to avoid color conflict with the gradient */
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white; /* Ensure text is readable */
+        
+            transition: background-image 0.3s, box-shadow 0.3s; /* Transition for gradient change */
+            outline: none;
+        }
+        
+        .btn-primary:hover {
+            background-image: linear-gradient(to right, #0056b3, #003c82); /* Darker gradient on hover */
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Shadow on hover */
+        }
+        .appnt ul {
+            list-style-image: url('Components/star.png');
+           
+            text-align: justify;
+            padding:65px 100px 100px 100px;
+            /* line-break: 5px; */
+            line-height:40px;
+          } 
+
+      /* Sidebar Styles */
+    .sidebar {
+        width: 250px;
+        background:rgba(255,255,255,0.6);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        left: 0; /* Sidebar is visible by default */
+        top: 0;
+        transition: left 0.3s ease;
+        z-index: 1000;
+      }
+  
+      .sidebar h2 {
+        text-align: center;
+        padding: 20px 0;
+        /* border-bottom: 1px solid #444; */
+      }
+  
+      .sidebar a {
+        padding: 15px;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s;
+      }
+  
+      .sidebar a:hover {
+        background:#6bb4f0; 
+      }
+
+      /* Active Menu Item */
+     .sidebar a.active {
+        background-image: linear-gradient(to bottom, #3E92D7, #2B4F8A); /* Change this color to your preferred active color */
+       }
+  
+      /* Content Styles */
+      .content {
+        flex-grow: 1;
+        padding: 20px;
+        margin-left: 250px; /* Default margin to account for the sidebar */
+        /* background: #f4f4f4; */
+        transition: margin-left 0.3s ease;
+      }
+  
+      /* Toggle Button Styles */
+      .toggle-btn {
+        display: none;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        z-index: 1100;
+      }
+  
+      /* Overlay for mobile */
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+        z-index: 900;
+      }
+  
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .sidebar {
+          left: -250px; /* Hide sidebar by default on smaller screens */
+        }
+  
+        .sidebar.visible {
+          left: 0; /* Slide in the sidebar */
+        }
+  
+        .toggle-btn {
+          display: block; /* Show toggle button on smaller screens */
+        }
+  
+        .content {
+          margin-left: 60px;
+          width:min-content; /* Remove margin for content on smaller screens */
+        }
+  
+        .content.shifted {
+          margin-left: 250px; /* Shift content to the right */
+        }
+  
+        .overlay {
+          display: block; /* Enable overlay on smaller screens */
+        }
+      }    
+
+        .menu-icon{
+            height:20px;
+            width:20px;
+            padding:5px 10px 0px 0px;
+        }
+
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            -webkit-appearance: none; /* Safari/Chrome */
+            -moz-appearance: none; /* Firefox */
+            appearance: none; 
+            /* color:red; */
+            /* display:none; */
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            -webkit-appearance: none; /* Safari/Chrome */
+            /* -moz-appearance: none;  */
+            /* appearance: none;  */
+            
+            /* display:none; */
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+
+       
+
+
+        
+
+      .inact_menu{
+        color:#2B4F8A;
+        font-weight:bold;
+        font-size:17px;
+        padding:0px 22px 10px 7px
+      }
+
+      .act_menu{
+        font-weight:bold;
+        font-size:20px;
+        padding:0px 14px 10px 7px
+      }
+
+      .tbl_container{
+        background-color: rgba(255,255,255,0.50) !important;
+        border-radius:15px;
+        padding:20px;
+        align-items: center;
+        text-align: center;
+        /* width:100%; */
+      }
+
+      .tbl_container p{
+        font-size:25px;
+        color:#2B4F8A;
+        /* overflow-x: auto; */
+
+      }
+
+      table, td, th {  
+        border: 1px solid #2B4F8A;
+        text-align: left;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 100%;
+       
+      }
+      
+      th, td {
+        padding: 15px;
+      }
+
+      tr:nth-child(even) {background-color: rgba(43, 79, 138,0.2);}
+
+    
+
